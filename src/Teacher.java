@@ -43,4 +43,8 @@ public class Teacher extends Person{
         }
         courses.add(course);
     }
+
+    public String toString() {
+        return String.format("%s\t%s\t%s\t%s\t%s", teacherId, getName(), getEmail(), getAge(), subject);
+    }
 }

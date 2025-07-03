@@ -42,4 +42,8 @@ public class Student extends Person{
         }
         courses.add(course);
     }
+
+    public String toString() {
+        return String.format("%s\t%s\t%s\t%s\t%s", studentId, getName(), getEmail(), getAge(), grade);
+    }
 }
